@@ -1,0 +1,4 @@
+tensorflow
+numpy
+logging
+matplotlib
