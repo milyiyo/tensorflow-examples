@@ -1,0 +1,6 @@
+tensorflow
+numpy
+logging
+matplotlib
+tensorflow_datasets
+tensorflow_hub
