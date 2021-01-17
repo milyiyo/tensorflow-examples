@@ -10,7 +10,7 @@ tfds.disable_progress_bar()
 from tensorflow.keras import layers
 
 (train_examples, validation_examples), info = tfds.load(
-    'cats_vs_dogs',
+    'cifar10',
     split=['train[:80%]', 'train[80%:]'],
     with_info=True,
     as_supervised=True,
@@ -45,7 +45,7 @@ feature_extractor.trainable = False
 # Attach a classification head
 model = tf.keras.Sequential([
   feature_extractor,
-  layers.Dense(2)
+  layers.Dense(10)
 ])
 
 model.summary()
